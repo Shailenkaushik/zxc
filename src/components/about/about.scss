@@ -1,0 +1,86 @@
+@import "../../app.scss";
+
+.div{
+    background: linear-gradient(180deg, #0c0c1d, #111132);
+width: 100%;
+height: 100%;
+align-items: center;
+h1{
+    margin-top: 20px;
+    font-size: 76px;
+   text-align: center;
+   @include mobile {
+    font-size: 60px;
+     
+   }
+}
+h2{
+    font-size: 46px;
+    @include mobile {
+        font-size: 50px;
+         
+       }
+   
+}
+.about{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    gap: 50px;
+
+    @include mobile {
+       flex-direction: column;
+       gap: 0px;
+        
+      }
+
+    .education{
+        @include mobile {
+          margin-top: 65%;
+          align-content: center;
+          font-size: 50px;
+             
+           }
+        ul,li{
+            margin: 10px;
+            padding: 10px;
+            font-size: 20px;
+            @include mobile {
+               font-size: 14px;
+                 
+               }
+        }
+    }
+    .skills{
+        @include mobile {
+           visibility: hidden;
+             
+           }
+        ul,li{
+            margin: 10px;
+            padding: 10px;
+            font-size: 20px;
+            @include mobile {
+               font-size: 11px;
+                 
+               }
+        }
+        b{
+            font-size: 24px;
+            @include mobile {
+                font-size: 10px;
+                 
+               }
+        }
+
+    }
+
+
+   
+}
+}
